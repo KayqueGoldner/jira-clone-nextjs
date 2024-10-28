@@ -26,6 +26,7 @@ import { DottedSeparator } from "@/components/dotted-separator";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { cn } from "@/lib/utils";
 
 import { createWorkspaceSchema } from "../schemas";
 import { useCreateWorkspace } from "../api/use-create-workspace";
@@ -168,6 +169,9 @@ export const CreateWorkspaceForm = ({
                 variant="secondary"
                 onClick={onCancel}
                 disabled={isPending}
+                className={cn(
+                  !onCancel && "invisible"
+                )}
               >
                 Cancel
               </Button>
