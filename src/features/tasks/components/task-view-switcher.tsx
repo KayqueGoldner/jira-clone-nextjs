@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { DottedSeparator } from "@/components/dotted-separator";
 import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
+import { useProjectId } from "@/features/projects/hooks/use-project-id";
 
 import { useCreateTaskModal } from "../hooks/use-create-task-modal";
 import { useGetTasks } from "../api/use-get-tasks";
@@ -28,6 +29,7 @@ export const TaskViewSwitcher = ({
   hideProjectFilter
 }: TaskViewSwitcherProps) => {
   const workspaceId = useWorkspaceId();
+  const paramProjectId = useProjectId();
   const { open } = useCreateTaskModal();
   const [view, setView] = useQueryState(
     "task-view",
@@ -49,7 +51,7 @@ export const TaskViewSwitcher = ({
     workspaceId,
     status,
     assigneeId,
-    projectId,
+    projectId: paramProjectId || projectId,
     dueDate
   });
 
