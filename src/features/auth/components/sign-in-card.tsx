@@ -23,6 +23,7 @@ import {
   FormItem,
   FormMessage 
 } from "@/components/ui/form";
+import { signUpWithGitHub, signUpWithGoogle } from "@/lib/oauth";
 
 import { loginSchema } from "../schemas";
 import { useLogin } from "../api/use-login";
@@ -111,6 +112,7 @@ export const SignInCard = () => {
           size="lg"
           className="w-full"
           disabled={isPending}
+          onClick={() => signUpWithGoogle()}
         >
           <FcGoogle className="mr-2 size-5" />
           Login with Google
@@ -120,6 +122,7 @@ export const SignInCard = () => {
           size="lg"
           className="w-full"
           disabled={isPending}
+          onClick={() => signUpWithGitHub()}
         >
           <FaGithub className="mr-2 size-5" />
           Login with GitHub
