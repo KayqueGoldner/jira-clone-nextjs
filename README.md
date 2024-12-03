@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# [Jira Clone](https://jira-clone-nextjs-navy.vercel.app/)
 
-## Getting Started
+A fully functional **Jira Clone App** built with **Next.js** and **TypeScript**, designed to streamline project management and team collaboration.
 
-First, run the development server:
+![Application image](/jira-clone-app.png "Application Screenshot")
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Authentication**: Secure login via OAuth and email.  
+- **User Roles and Permissions**: Assign roles and manage permissions effectively.  
+- **Workspaces**: Create, edit, invite members, and delete workspaces.  
+- **Projects**: Manage projects with options to create, edit, assign members, and delete.  
+- **Tasks**: Create, edit, assign, and delete tasks efficiently.  
+- **Analytics Dashboard**: Gain insights into project progress, task completion rates, and team performance through visually appealing charts and graphs.  
+- **Kanban Board View**: Visualize tasks and manage workflow with an intuitive drag-and-drop interface.  
+- **Calendar View**: Track deadlines and milestones on a calendar.  
+- **Data Table**: View, filter, and sort project and task data in a structured table format for quick reference and analysis.  
+- **Responsive Design**: Optimized for devices of all sizes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**:  
+  - [Next.js](https://nextjs.org/) - A React framework for server-side rendering and static site generation.  
+- **Backend**:  
+  - [Hono](https://hono.dev/) - Lightweight and high-performance web framework.  
+  - [Appwrite](https://appwrite.io/) - RESTful API for backend services.  
+- **Programming Language**:  
+  - [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript for robust development.  
+- **Styling**:  
+  - [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework.  
+  - [Shadcn UI](https://ui.shadcn.com/) - A collection of accessible and customizable UI components.  
+- **Authentication**:  
+  - [Appwrite](https://appwrite.io/) - Backend-as-a-service for authentication and database.  
+  - [GitHub OAuth](https://github.com/) - Secure OAuth2 authentication with GitHub.  
+  - [Google OAuth](https://developers.google.com/identity/protocols/oauth2?hl=en) - Google sign-in for easy user authentication.  
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
